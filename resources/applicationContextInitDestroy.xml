@@ -5,12 +5,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
-    http://www.springframework.org/schema/context/spring-context.xsd">
+    https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id = "myPet"
-          class = "part1.IoC.Dog">
+    <bean id="myPet"
+          class="spring_course.p1_spring_basics.XMLconfiguration.Dog"
+          init-method="init"
+          destroy-method="destroy">
 
     </bean>
-
 
 </beans>
